@@ -1,0 +1,802 @@
+/* 초기설정 */
+body{
+  overflow: hidden;
+}
+.hidden{
+  width:1px; height:1px; font-size:0px; line-height: 0px; position: absolute;
+}
+/* 헤더시작 */
+header#header_wrap{
+  width: 180px;
+  height: 100%;
+  float: left;
+  position: fixed;
+  background: black;
+  z-index: 9999;
+}
+h1#logo{
+  width: 106px;
+  height: 50px;
+  position: absolute; left: 50%; margin-left: -57px; top: 65px;
+}
+nav#mainmenu{
+  width: 180px;
+  height: 800px;
+  position: absolute; left: 0px; bottom: 0px;
+}
+ul#mainmenu_list li{
+  width: 180px;
+  height: 97.5px;
+  position: relative; 
+  z-index: 1;
+  cursor: pointer;
+  font: normal 24px/97.5px "Noto Sans";
+  margin-left:30px;
+  color: white;
+  opacity: 0.5;
+}
+
+.menu_text{
+  font: normal 14px/97.5px "Noto Sans";
+  position: absolute; left: 70px;
+}
+div#menuselected_bg{
+  width: 180px;
+  height: 97.5px;
+  background: #FF3D00;
+  position: absolute; left: 0px; top: 0px;
+}
+/* .mainmenu_selected{
+  opacity: 1;
+} */
+
+/* 컨텐츠시작 */
+section{
+  padding-left: 180px;
+  box-sizing: border-box;
+  cursor:default;
+}
+article#contents{
+    width: 1920px;
+}
+/*메인비쥬얼 시작*/
+section#mainvisual_wrap{
+    width: 100%;
+    height: 960px;
+    background: black;
+    position: relative; right: 0px; /* common.css에 모든 section 영역 padding-left 걸어놨어요*/
+    perspective: 800px;
+}
+div#titletext{
+    width: 475px;
+    height: 358px;
+    position: absolute; left: 50%;margin-left: -150px; top: 50%;margin-top: -179px;
+    
+}
+.maintext{
+    font: bold 150px/130px "Courier Prime"; position: relative; left:0px; top:-50px; opacity: 0;
+}
+.white{
+    color: white;
+}
+.orange{
+    color:#FF3D00;
+}
+div#greeting{
+    width: 314px;
+    height: 50px;
+    position: absolute; left: 50%; margin-left: -150px;bottom: 200px;
+}
+.greeting_text{
+    display: block;
+    font: normal 21px/24px "Courier Prime";
+    color: white;
+    opacity: 0.7;
+    float: left;
+}
+p#greeting_01{
+  width:0px; height: 21px; overflow: hidden;
+}
+p#greeting_02{
+  width:0px; height:21px; overflow: hidden;
+}
+p#blink{
+  width:1px; height:21px; opacity: 0.7; float:left; display: inline-block;
+  border-right:solid 2px transparent;
+  -webkit-animation: blink 1s step-end infinite;
+}
+p.greeting_text>span{
+  display: block;
+  width:230px;
+}
+div#mainvisual_img_list{
+    width: 1400px;
+    height: 100%;
+}
+.mainvisual_img{
+  transform-style: preserve-3d;
+}
+.sj{
+    position: absolute; left: 300px; top: 100px; 
+}
+.se{
+    position: absolute; left: 450px; bottom: 100px;
+}
+.cb{
+    position: absolute; right: 350px; top: 100px;
+}
+.js{
+    position: absolute; right: 200px; bottom: 100px;
+}
+/*메인비쥬얼끝*/
+/*타이틀*/
+.title{
+    width: 720px;
+    height: 122px;
+    margin: 0px auto;
+    /* background: red; */
+    position: relative; top: 30px;
+}
+.title p{
+    text-align: center;
+}
+.white_text{
+    font: normal 20px "Courier Prime";
+    color: white;
+}
+.black_text{
+    font: normal 20px "Courier Prime";
+    color: black;
+}
+.orange_title{
+    font: bold 60px "Courier Prime";
+    color: #FF3D00;
+}
+.first{
+    position: relative; left:50%; margin-left:-150px; top: 0px; width:300px;
+}
+.second{
+    position: relative; left:50%; margin-left:-165px; top: 10px; width:330px;
+}
+.third{
+    position: relative; left:50%; margin-left:-40px;  top: 10px; width:80px;
+}
+.explain{
+    font: normal 16px/24px "Noto Sans KR";
+    color: black;
+    text-align: center;
+    opacity: 0.5;
+}
+.white_explain{
+    font: normal 16px/24px "Noto Sans KR";
+    color:white;
+    text-align: center;
+    opacity: 0.7;
+}
+.fourth{
+    position: relative;  top: 30px;
+}
+/*타이틀끝*/
+/*어바웃 시작*/
+section#about_wrap{
+    width: 100%;
+    height: 960px;
+    float: left;
+    background: url("../images/h1company_about_img.jpg") right no-repeat;
+    background-size:cover;
+    position: relative;
+}
+div#about_left{
+    width: 730px;
+    height: 550px;
+    position: absolute; left: 180px; top: 200px; opacity: 0;
+}
+p#about_title{
+    font: bold 70px/75px "Noto Sans";
+    color: white;
+    margin-bottom: 50px;
+}
+p#about_title span{
+    color: #FF3D00;
+}
+p#about_text{
+    font: lighter 14px/24px "Noto Sans KR";
+    color: white;
+    opacity: 0.7;
+}
+div#about_right{
+    width: 460px;
+    height: 450px;
+    position: absolute; right: 0px; top: 300px; opacity: 0;
+}
+div.about_vm{
+    width: 460px;
+    height: 187px;
+    margin-bottom: 70px;
+    
+}
+p.vm_title{
+    width: 460px;
+    font: bold 24px "Noto Sans";
+    color: white;
+    border-bottom: solid 2px white;
+    margin-bottom: 30px;
+}
+ul.vm_contents li{
+    width: 110px;
+    height: 110px;
+    float: left;
+    border-radius: 110px;
+    margin-right:65px;
+    position: relative;
+    background:/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+100,000000+100,ffffff+100&0.4+0,0.4+100 */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ffffff', endColorstr='#66ffffff',GradientType=0 ); /* IE6-9 */
+    
+}
+ul.vm_contents>li>p{
+    font: normal 16px "Noto Sans KR";
+    color: white ;
+    text-align: center;
+}
+ul.vm_contents li:last-child{
+    margin-right: 0px;
+}
+.center{
+    width: 110px;
+    height: 16px;
+    position: absolute; top: 50%; margin-top: -12px;
+}
+.centertwo{
+    width: 110px;
+    height: 30px;
+    position: absolute; top: 50%; margin-top: -28px;
+}
+.centerthree{
+    width: 110px;
+    height: 50px;
+    position: absolute; top: 50%; margin-top: -40px;
+}
+/*어바웃끝*/
+/*서비스 시작*/
+section#services_wrap{
+    width: 100%;
+    height: 960px;
+    float: left;
+}
+ul#services_list{
+    width: 1260px;
+    height: 445px;
+    margin:0px auto;
+    position: relative; top: 160px;
+}
+ul#services_list>li{
+    width: 300px;
+    height: 445px;
+    float: left;
+    margin-right: 180px;
+    text-align: center;
+    position: relative; 
+    top:150px;
+    opacity: 0;
+}
+ul#services_list>li:last-child{
+    margin-right: 0px;
+}
+
+div.we{
+    width: 232px;
+    height: 232px;
+    border-radius: 232px;
+    background: black;
+    position: absolute; left: 50%; margin-left: -116px; top: 0px;
+}
+p.we_center{
+    width: 232px;
+    height: 232px;
+    font: bold 60px/60px "Secular One";
+    color:white;
+    position: absolute; left:50%; margin-left: -116px; top: 55px;
+}
+p.we_center span{
+    color: #FF3D00;
+}
+ul.services_text{
+    width: 300px;
+    position: absolute;left: 50%; margin-left: -150px; top: 260px;
+}
+ul.services_text li{
+    font: normal 24px "Noto Sans KR"; 
+    margin-bottom: 10px;
+    /*폰트조금 큰것같은디*/
+}
+/*서비스끝*/
+/*포트폴리오 시작*/
+section#portfolio_wrap{
+    width: 100%;
+    height: 960px;
+    float: left;
+    background: black;
+}
+div#portfolio_list_wrap{
+    width: 1580px;
+    height: 630px;
+    margin: 0px auto;
+    position: relative; top: 150px;
+    overflow: hidden;
+}
+ul#portfolio_list{
+    width: 200%;
+    height: 630px;
+    margin: 0px auto;
+    position: relative; left:0px; top: 0px;
+    
+}
+ul#portfolio_list>li{
+    width: 1580px;
+    height: 630px;
+    float: left;
+    
+}
+ul.portfolio_box{
+    width: 1580px;
+    height: 630px;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap:1em;
+    grid-template-rows:repeat(2, 1fr); 
+}
+ul.portfolio_box li{
+    width:370px;
+    height: 300px; 
+    float: left;
+    position: relative;
+    -webkit-transition: all .4s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+}
+div.front{
+    position: absolute;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+
+div.back{
+    width: 370px;
+    height: 300px;
+    position: relative; 
+    background: url("../images/portfolio_img00.jpg") no-repeat;
+    background-size: cover;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-backface-visibility: hidden;
+}
+div.back::before{
+    content: '';
+    display:block;
+    width: 370px;
+    height: 300px;
+    opacity: 0.75;
+    background-color:black;
+}
+ul.portfolio_box li.selected{
+    -webkit-transform: rotateY(180deg);
+}
+div.portfolio_text{
+    width: 300px;
+    height: 200px;
+    position: absolute; left: 50%; margin-left:-150px; top: 70px;
+}
+p.portfolio_fliptitle{
+    text-align: center;
+    font: bold 22px "Noto Sans";
+    color: white;
+    margin-bottom: 20px;
+}
+p.portfolio_fliptext{
+    text-align: center;
+    font: lighter 10px/20px "Noto Sans KR";
+    color: white;
+    margin-bottom: 20px;
+}
+p.detail{
+    margin: 0px auto;
+    width: 22px;
+    height: 22px;
+    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.2+0,0.2+100 */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#33ffffff',GradientType=0 ); /* IE6-9 */
+    border-radius: 22px;
+    font-size:10px;
+    line-height: 22px;
+    color: #FF3D00;
+    text-align: center;
+}
+div.back00{
+    background: url("../images/portfolio_img00.jpg") no-repeat;
+    background-size: cover;
+}
+div.back01{
+    background: url("../images/portfolio_img01.jpg") no-repeat;
+    background-size: cover;
+}
+div.back02{
+    background: url("../images/portfolio_img02.jpg") no-repeat;
+    background-size: cover;
+}
+div.back03{
+    background: url("../images/portfolio_img03.jpg") no-repeat;
+    background-size: cover;
+}
+div.back04{
+    background: url("../images/portfolio_img04.jpg") no-repeat;
+    background-size: cover;
+}
+div.back05{
+    background: url("../images/portfolio_img05.jpg") no-repeat;
+    background-size: cover;
+}
+div.back06{
+    background: url("../images/portfolio_img06.jpg") no-repeat;
+    background-size: cover;
+}
+div.back07{
+    background: url("../images/portfolio_img07.jpg") no-repeat;
+    background-size: cover;
+}
+/*포트폴리오 끝*/
+/*프로세스시작*/
+section#process_wrap{
+    width: 100%;
+    height: 960px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+div#process_list_wrap{
+  width:100%;
+  height:630px;
+  overflow: hidden;
+  position: absolute; bottom:0px;
+}
+ul#process_list{
+    width: 100%;
+    height: 3780px;
+    background: #676767;
+    position: absolute; left:0px; top:0px;
+}
+ul#process_list li{
+    width: 100%;
+    height: 630px;
+    float:left;
+    -webkit-transform: scale(0.8);
+    -webkit-transition:0.5s ease;
+}
+ul#process_list li.selected{
+  -webkit-transform: scale(1);
+}
+p.process_img{
+    width: 730px;
+    height: 370px;
+    position: absolute; left: 80px; top: 50%; margin-top: -185px;
+}
+p.process_title{
+    width: 370px;
+    height: 55px;
+    position: absolute; left: 900px; top: 180px;
+    font: normal 62px/55px "Secular One";
+    color: white;
+}
+p.process_text{
+    width: 625px;
+    height: 130px;
+    font: lighter 20px/30px "Noto Sans KR";
+    color: #dddddd;
+    position: absolute; left:900px; top: 320px;
+}
+div#process_list_wrap>span{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #9C9C9C;
+    color: white;
+    z-index: 999;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    position: absolute; right: 240px; 
+    cursor:pointer;
+}
+span#prev_btn{
+    top:220px;
+    display: none;
+}
+span#next_btn{
+    bottom:220px;
+}
+/*프로세스 끝*/
+/*어워드 시작*/
+section#award_wrap{
+    width: 100%;
+    height: 960px;
+    float: left;
+    background: black;
+    position: relative;
+    overflow: hidden;
+}
+ul#award_inner{
+    width: 100%;
+    height: 465px;
+    position: relative; top:210px;  
+}
+ul#award_inner>li{
+    width: 100%;
+    height: 155px;
+    float: left;
+}
+ul#award_inner>li::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+ul#award_inner>li:last-child::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: white;
+    position: absolute; bottom: 0px;
+}
+ul.award_list{
+  width:5000px;
+  height: 155px;
+  position: relative; top:0px;
+}
+ul.award_list>li{
+    width: auto;
+    height: 155px;
+    float: left;
+}
+ul.award_contents{
+  width:auto;
+  height:155px;
+  float:left;
+}
+ul.award_contents>li{
+    height: 155px;
+    float: left;
+    line-height: 155px;
+    text-align: left;
+    font-size: 50px;
+    color: white;
+    font-weight: 300;
+}
+ul.award_contents>li:nth-child(odd){
+    font-weight: bold;
+}
+div.tooltip{
+  width:185px; height:269px; position: fixed; left:0px; top:0px; border-radius: 10px; background: #ffffff;
+  display:none; z-index: 10;
+}
+div.tooltip>img{
+  width:185px; height:135px; float:left;
+}
+p.tooltip_title{
+  width:185px; height:108px;
+  float:left;
+  text-align: center;
+  font:bold 16px/22px 'Noto Sans KR';
+  color:black;
+}
+span.tooltip_text{
+  font-size:14px;
+}
+span.tooltip_date{
+  font-size: 10px;
+}
+
+/*어워드 끝*/
+/*클라언트 시작*/
+section#client_wrap{
+    width: 100%;
+    height: 960px;
+    float: left;
+    position: relative;
+}
+ul#client_work{
+    width: 1000px;
+    height: 212px;
+    position: relative; left: 50%; margin-left: -500px; top: 230px;
+    
+}
+ul#client_work li{
+    width: 250px;
+    height: 212px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+ul#client_work li::before{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 65px;
+    background: #C6C6C6;
+    opacity: 0.4;
+    position: absolute; bottom: 20px;
+}
+ul#client_work li:first-child::before{
+    display: none;
+}
+p.client_icon{
+    width: 250px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+p.client_num{
+    font: bold 60px "Noto Sans";
+    color: #4E4E4E;
+}
+p.client_name{
+    font: bold 20px "Noto Sans";
+    color:#9F9F9F;
+}
+ul#client_list{
+    width: 1200px;
+    height: 216px;
+    position: relative; left: 50%; margin-left: -600px; bottom: -320px;
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-gap:1em;
+    grid-template-rows:repeat(2, 1fr);  */
+}
+/*클라이언트 끝*/
+/*컨텍트어스 시작*/
+section#contact_wrap{
+    width: 100%;
+    height: 960px;
+    float: left;
+    position: relative;
+    background: url("../images/contactus_bg.jpg") right no-repeat;
+    background-size:cover;
+}
+div#contact_inner{
+    width: 1360px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative; top: 200px;
+    /* padding-left: 90px; */
+}
+h3#contactus{
+    font: bold 60px "Courier Prime";
+    color: white;
+    margin-bottom: 30px;
+}
+p#contactus_text{
+    font: normal 24px "Courier Prime";
+    color: #c2c2c2;
+    margin-bottom: 80px;
+}
+ul#form{
+    width: 900px;
+    height: 320px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap:1em;
+    grid-template-rows:repeat(3, 1fr); 
+}
+ul#form li{
+    width: 420px;
+    height: 60px;
+}
+ul#form li:last-child{
+    width: 878px !important;
+    height: 155px !important;
+}
+ul#form li:nth-child(2){
+    grid-column: 2/3;
+}
+ul#form li:nth-child(3){
+    grid-column: 1/3 !important;
+}
+ul#form li:last-child{
+    grid-column: 1/3 !important;
+}
+ul#form li input{
+    width: 420px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background:#EFEFEE ;
+    opacity: 0.8;
+    font: bold 18px "Noto Sans";
+    color: #5f5f5f;
+    padding-left: 20px;
+}
+input#subject{
+    width:878px !important;
+    height: 60px !important;
+}
+textarea#massage{
+    width: 878px ;
+    height: 155px ;
+    border: none;
+    border-radius: 5px;
+    background:#EFEFEE ;
+    opacity: 0.8;
+    font: bold 18px "Noto Sans";
+    color: #5f5f5f;
+    padding-top: 20px;
+    padding-left: 20px;
+    resize:none;
+}
+div#adress{
+    width: 360px;
+    height: 84px;
+    position: absolute; right: 50px; top: 200px;
+}
+div#contact_num{
+    width: 360px;
+    height: 84px;
+    position: absolute; right: 50px; top: 350px;
+}
+h4.contact_title{
+    font: bold 32px "Courier Prime";
+    color: white;
+}
+p.contact_text{
+    font: bold 20px "Courier Prime";
+    color: #9c9c9c;
+}
+div#submit_btn{
+    width: 150px;
+    height: 82px;
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff3d00+0,ff3d00+100&0.8+0,0.8+100 */
+    background: -moz-linear-gradient(top,  rgba(255,61,0,0.8) 0%, rgba(255,61,0,0.8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(255,61,0,0.8) 0%,rgba(255,61,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(255,61,0,0.8) 0%,rgba(255,61,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccff3d00', endColorstr='#ccff3d00',GradientType=0 ); /* IE6-9 */
+    border-radius: 5px;
+    position: absolute; right:460px; bottom:-7px;
+    text-align: center;
+    font: bold 22px/82px "Courier Prime";
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+/* 키프레임 */
+@keyframes blink{
+  0%{border-color:transparent}
+  50%{ border-color: white;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
